@@ -1,0 +1,36 @@
+.input-container {
+  width: 20rem;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  gap: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 5px;
+}
+.title-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.title {
+  font-size: 2rem;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.btn {
+  width: 20rem;
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: #664ce6;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.text-gray {
+  color: rgb(118, 118, 118);
+}
