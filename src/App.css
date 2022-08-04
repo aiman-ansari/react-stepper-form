@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 4rem;
   /* font-family: "Alegreya", serif; */
   font-family: "Inter", sans-serif;
   /* font-family: "Lobster", cursive; */
@@ -27,7 +27,7 @@
 }
 .stepper-container {
   /* background-color: red; */
-  margin: 3rem auto;
+  margin: 2rem auto;
   width: 25rem;
 }
 
