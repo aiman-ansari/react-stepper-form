@@ -35,7 +35,6 @@ function App() {
         <Stepper step={stepCount} />
       </div>
       {getFormContent(stepCount)}
-
       <button
         className='btn'
         onClick={() => {

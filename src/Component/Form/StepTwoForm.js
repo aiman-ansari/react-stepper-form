@@ -4,7 +4,7 @@ export const StepTwoForm = () => {
     <>
       <div className='title-container'>
         <div className='title'>Let's set up a home for all your work</div>
-        <span className='text-gray'>
+        <span className='text-gray f-sm'>
           You can always create another workspace later.
         </span>
       </div>

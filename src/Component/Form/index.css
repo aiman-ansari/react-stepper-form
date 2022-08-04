@@ -1,3 +1,10 @@
+:root {
+  --gray-border: rgb(188, 188, 188);
+  --primary-color: #664ce6;
+  --white-color: white;
+  --text-gray: #9b9b9b;
+  --text-gray-dark: rgb(70, 70, 70);
+}
 .input-container {
   width: 20rem;
 }
@@ -10,44 +17,48 @@
 
 input {
   padding: 10px;
-  border: 1px solid rgb(188, 188, 188);
+  border: 1px solid var(--gray-border);
   border-radius: 5px;
+  outline: none;
+}
+input:focus {
+  border: 1px solid var(--primary-color);
 }
 .title-container {
   text-align: center;
   margin-bottom: 2rem;
 }
 .title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 10px 0;
-  font-weight: bold;
+  font-weight: bolder;
 }
 .btn {
   width: 20rem;
   margin-top: 10px;
   padding: 10px 0;
-  background-color: #664ce6;
+  background-color: var(--primary-color);
   border: none;
-  color: white;
+  color: var(--white-color);
   border-radius: 5px;
+  cursor: pointer;
 }
 .text-gray {
-  color: #737e95;
+  color: var(--text-gray);
+  font-weight: 500;
 }
 .text-gray-dark {
-  color: rgb(70, 70, 70);
+  color: var(--text-gray-dark);
   font-weight: 800;
   font-size: 14px;
 }
 .example-input-field {
-  border: 1px solid rgb(188, 188, 188);
-  /* background-color: rgb(204, 204, 204); */
-  /* padding: 9px 0; */
+  border: 1px solid var(--gray-border);
   padding: 0;
   border-radius: 5px;
 }
+
 .example-input-field input {
-  /* background-color: red; */
   border: none;
   width: 11rem;
 }
@@ -67,11 +78,11 @@ input {
   padding: 1rem;
   width: 7.5rem;
   gap: 10px;
-  border: 1px solid gray;
+  border: 1px solid var(--text-gray);
   border-radius: 5px;
 }
 .button-container:hover {
-  border: 2px solid #664ce6;
+  border: 2px solid var(--primary-color);
   cursor: pointer;
 }
 .button-container img {
@@ -83,4 +94,18 @@ input {
 }
 .f-sm {
   font-size: 13px;
+}
+.check-icon {
+  background-color: var(--primary-color);
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 1rem;
+  color: var(--white-color);
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.4rem;
+  }
 }
